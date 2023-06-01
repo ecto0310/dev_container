@@ -1,0 +1,17 @@
+{
+    "name": "latex",
+    "dockerComposeFile": [
+        "./compose.yml"
+    ],
+    "service": "latex",
+    "remoteUser": "dev",
+    "workspaceFolder": "/home/dev/workspace",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "James-Yu.latex-workshop"
+            ]
+        }
+    },
+    "shutdownAction": "stopCompose"
+}

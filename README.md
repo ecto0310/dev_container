@@ -10,3 +10,4 @@ My dev container
 
 ## Container list
 - C++
+- LaTeX

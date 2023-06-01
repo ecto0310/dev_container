@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  latex:
+    # build:
+    #   context: "."
+    image: ghcr.io/ecto0310/dev_container.latex:main
+    volumes:
+      - ../:/home/dev/workspace
+    tty: true
