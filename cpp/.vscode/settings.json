@@ -1,0 +1,8 @@
+{
+    "C_Cpp.clang_format_style": "Google",
+    "files.exclude": {
+        ".devcontainer": true,
+    },
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true
+}

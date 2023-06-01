@@ -9,3 +9,4 @@ My dev container
 1. Open the folder you want to use and select "Dev Containers: Open Folder in Container." from the command palette.
 
 ## Container list
+- C++

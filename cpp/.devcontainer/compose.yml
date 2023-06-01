@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  cpp:
+    # build:
+    #   context: "."
+    image: ghcr.io/ecto0310/dev_container.cpp:main
+    volumes:
+      - ../:/home/dev/workspace
+    tty: true

@@ -1,0 +1,17 @@
+{
+    "name": "cpp",
+    "dockerComposeFile": [
+        "./compose.yml"
+    ],
+    "service": "cpp",
+    "remoteUser": "dev",
+    "workspaceFolder": "/home/dev/workspace",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-vscode.cpptools-extension-pack"
+            ]
+        }
+    },
+    "shutdownAction": "stopCompose"
+}
