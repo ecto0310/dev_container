@@ -1,4 +1,7 @@
 {
+    "files.exclude": {
+        ".devcontainer": true,
+    },
     "latex-workshop.latex.recipes": [
         {
             "name": "lualatex",
