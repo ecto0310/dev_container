@@ -1,6 +1,6 @@
 FROM archlinux:base-devel
 
-RUN sudo pacman -Syyu --noconfirm texlive-most texlive-lang perl-yaml-tiny perl-file-homedir
+RUN sudo pacman -Syyu --noconfirm texlive texlive-lang perl-yaml-tiny perl-file-homedir
 
 ARG UID=1000
 ARG GID=1000
