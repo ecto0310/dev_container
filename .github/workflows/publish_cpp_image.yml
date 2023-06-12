@@ -4,6 +4,8 @@ on:
   push:
     paths:
     - 'cpp/**'
+  schedule:
+    - cron: '0 0 1 * *'
   workflow_dispatch:
 
 env:

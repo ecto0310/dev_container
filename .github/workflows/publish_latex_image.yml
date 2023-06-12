@@ -4,6 +4,8 @@ on:
   push:
     paths:
     - 'latex/**'
+  schedule:
+    - cron: '0 0 1 * *'
   workflow_dispatch:
 
 env:
