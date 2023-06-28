@@ -1,6 +1,6 @@
 {
     "C_Cpp.clang_format_style": "Google",
-    "workbench.colorTheme": "Hybrid",
+    "workbench.colorTheme": "onehalf-dark",
     "files.insertFinalNewline": true,
     "files.trimFinalNewlines": true,
     "files.exclude": {

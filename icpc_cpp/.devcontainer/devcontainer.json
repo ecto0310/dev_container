@@ -1,6 +1,6 @@
 {
-    "name": "cpp",
-    // "image": "ghcr.io/ecto0310/dev_container.cpp:main",
+    "name": "icpc_cpp",
+    // "image": "ghcr.io/ecto0310/dev_container.icpc_cpp:main",
     "build": {
         "dockerfile": "Dockerfile"
     },
