@@ -1,0 +1,62 @@
+{
+    // IntelliSense を使用して利用可能な属性を学べます。
+    // 既存の属性の説明をホバーして表示します。
+    // 詳細情報は次を確認してください: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "(gdb) C++ Launch (local)",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${fileDirname}/${fileBasenameNoExtension}_dev.out",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "preLaunchTask": "cpp_debug_build"
+        },
+        {
+            "name": "(gdb) C++ Launch",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${fileDirname}/${fileBasenameNoExtension}.out",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "preLaunchTask": "cpp_build"
+        },
+        {
+            "name": "(gdb) C++ debug Launch (stdout and stderr to file)",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${fileDirname}/${fileBasenameNoExtension}.out",
+            "args": [
+                "0<",
+                "${input:inputFile}",
+                "1>",
+                "${fileDirname}/${fileBasenameNoExtension}_out",
+                "2>",
+                "${fileDirname}/${fileBasenameNoExtension}_err",
+            ],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "preLaunchTask": "cpp_debug_build_open_stdout"
+        },
+    ],
+    "inputs": [
+        {
+            "id": "inputFile",
+            "type": "promptString",
+            "description": "input file name",
+            "default": "in"
+        }
+    ]
+}
