@@ -53,20 +53,11 @@
             }
         },
         {
-            "label": "cpp_debug_build_open_stdout",
+            "label": "cpp_build_open_stdout",
             "dependsOn": [
-                "cpp_debug_build",
+                "cpp_build",
                 "cpp_open_stdout"
             ]
-        },
-        {
-            "label": "cpp_run",
-            "type": "shell",
-            "command": "source ${env:HOME}/.bashrc && run ${fileDirname}/${fileBasenameNoExtension}.out",
-            "group": {
-                "kind": "test",
-                "isDefault": true
-            }
         },
     ]
 }

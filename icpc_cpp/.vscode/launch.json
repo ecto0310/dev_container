@@ -31,7 +31,7 @@
             "preLaunchTask": "cpp_build"
         },
         {
-            "name": "(gdb) C++ debug Launch (stdout and stderr to file)",
+            "name": "(gdb) C++ Launch (stdout and stderr to file)",
             "type": "cppdbg",
             "request": "launch",
             "program": "${fileDirname}/${fileBasenameNoExtension}.out",
@@ -48,7 +48,7 @@
             "environment": [],
             "externalConsole": false,
             "MIMode": "gdb",
-            "preLaunchTask": "cpp_debug_build_open_stdout"
+            "preLaunchTask": "cpp_build_open_stdout"
         },
     ],
     "inputs": [
