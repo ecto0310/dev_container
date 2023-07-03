@@ -12,7 +12,6 @@
                 "-g",
                 "-Wall",
                 "-Wextra",
-                "-fsanitize=undefined,address",
                 "-O2",
                 "-DDEBUG",
                 "${file}",
