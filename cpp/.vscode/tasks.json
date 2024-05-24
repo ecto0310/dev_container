@@ -1,0 +1,53 @@
+{
+  "tasks": [
+    {
+      "type": "cppbuild",
+      "label": "cpp_build",
+      "command": "/usr/sbin/g++",
+      "args": [
+        "-fdiagnostics-color=always",
+        "-Wall",
+        "-Wextra",
+        "-O2",
+        "${file}",
+        "-o",
+        "${fileDirname}/${fileBasenameNoExtension}.out"
+      ],
+      "options": {
+        "cwd": "${fileDirname}"
+      },
+      "problemMatcher": ["$gcc"],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "detail": "Compile program"
+    },
+    {
+      "type": "cppbuild",
+      "label": "cpp_build_debug",
+      "command": "/usr/sbin/g++",
+      "args": [
+        "-D_GLIBCXX_DEBUG",
+        "-fdiagnostics-color=always",
+        "-fsanitize=undefined",
+        "-g",
+        "-Wall",
+        "-Wextra",
+        "-O0",
+        "${file}",
+        "-o",
+        "${fileDirname}/${fileBasenameNoExtension}_deb.out"
+      ],
+      "options": {
+        "cwd": "${fileDirname}"
+      },
+      "problemMatcher": ["$gcc"],
+      "group": {
+        "kind": "build"
+      },
+      "detail": "Compile program for debug"
+    }
+  ],
+  "version": "2.0.0"
+}
