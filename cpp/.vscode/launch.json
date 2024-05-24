@@ -1,0 +1,115 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Launch",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${fileDirname}/${fileBasenameNoExtension}.out",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${fileDirname}",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "gdb",
+      "preLaunchTask": "cpp_build"
+    },
+    {
+      "name": "Launch (file out)",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${fileDirname}/${fileBasenameNoExtension}.out",
+      "args": [
+        "1>",
+        "${fileBasenameNoExtension}_stdin_out.txt",
+        "2>",
+        "${fileBasenameNoExtension}_stdin_err.txt"
+      ],
+      "stopAtEntry": false,
+      "cwd": "${fileDirname}",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "gdb",
+      "preLaunchTask": "cpp_build"
+    },
+    {
+      "name": "Launch (file in/out)",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${fileDirname}/${fileBasenameNoExtension}.out",
+      "args": [
+        "0<",
+        "${input:inputFile}",
+        "1>",
+        "${fileBasenameNoExtension}_${fileBasenameNoExtension}_out.txt",
+        "2>",
+        "${fileBasenameNoExtension}_${fileBasenameNoExtension}_err.txt"
+      ],
+      "stopAtEntry": false,
+      "cwd": "${fileDirname}",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "gdb",
+      "preLaunchTask": "cpp_build"
+    },
+    {
+      "name": "Debug Launch",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${fileDirname}/${fileBasenameNoExtension}_deb.out",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${fileDirname}",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "gdb",
+      "preLaunchTask": "cpp_build_debug"
+    },
+    {
+      "name": "Debug Launch (file out)",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${fileDirname}/${fileBasenameNoExtension}_deb.out",
+      "args": [
+        "1>",
+        "${fileBasenameNoExtension}_stdin_out.txt",
+        "2>",
+        "${fileBasenameNoExtension}_stdin_err.txt"
+      ],
+      "stopAtEntry": false,
+      "cwd": "${fileDirname}",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "gdb",
+      "preLaunchTask": "cpp_build_debug"
+    },
+    {
+      "name": "Debug Launch (file in/out)",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${fileDirname}/${fileBasenameNoExtension}_deb.out",
+      "args": [
+        "0<",
+        "${input:inputFile}",
+        "1>",
+        "${fileBasenameNoExtension}_${fileBasenameNoExtension}_out.txt",
+        "2>",
+        "${fileBasenameNoExtension}_${fileBasenameNoExtension}_err.txt"
+      ],
+      "stopAtEntry": false,
+      "cwd": "${fileDirname}",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "gdb",
+      "preLaunchTask": "cpp_build_debug"
+    }
+  ],
+  "inputs": [
+    {
+      "type": "promptString",
+      "id": "inputFile",
+      "description": "Input file name",
+      "default": "in.txt"
+    }
+  ]
+}
