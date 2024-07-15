@@ -1,4 +1,4 @@
-FROM archlinux:base-devel@sha256:10ce20a6f7e0844e2b0cbe367dc32b584dfbfa9dc068712d119b192c5c83b637
+FROM archlinux:base-devel-20231112.0.191179@sha256:6bcfe7dee58e56aa5f2066b4bb18f5e931c3131ead1d6697b8b41d2d4c725126
 
 RUN useradd -G wheel builder \
     && echo '%wheel ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
