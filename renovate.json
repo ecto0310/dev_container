@@ -18,7 +18,9 @@
       "matchPackageNames": [
         "archlinux"
       ],
-      "versioning": "regex:^base-devel-(\\d{8}\\.\\d{1}\\.\\d+)$",
+      "matchUpdateTypes": [
+        "digest"
+      ],
       "automerge": true
     }
   ]
