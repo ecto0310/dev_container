@@ -1,0 +1,24 @@
+{
+  "name": "cpp",
+  "image": "ghcr.io/ecto0310/dev_container.cpp:main",
+  // "build": {
+  //   "dockerfile": "Dockerfile"
+  // },
+  "workspaceFolder": "/workspace",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode.cpptools-extension-pack",
+        "usernamehw.errorlens"
+      ]
+    }
+  },
+  "mounts": [
+    {
+      "type": "bind",
+      "source": "${localWorkspaceFolder}",
+      "target": "/workspace"
+    }
+  ],
+  "shutdownAction": "stopContainer"
+}

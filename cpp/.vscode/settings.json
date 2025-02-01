@@ -1,0 +1,12 @@
+{
+  "editor.formatOnSave": true,
+  "files.insertFinalNewline": true,
+  "editor.renderWhitespace": "all",
+  "files.trimFinalNewlines": true,
+  "[cpp]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  },
+  "files.associations": {
+    "iostream": "cpp"
+  }
+}
