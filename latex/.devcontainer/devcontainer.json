@@ -1,0 +1,21 @@
+{
+  "name": "latex",
+  "image": "ghcr.io/ecto0310/dev_container.latex:main",
+  // "build": {
+  //   "dockerfile": "Dockerfile"
+  // },
+  "workspaceFolder": "/workspace",
+  "customizations": {
+    "vscode": {
+      "extensions": ["James-Yu.latex-workshop", "usernamehw.errorlens"]
+    }
+  },
+  "mounts": [
+    {
+      "type": "bind",
+      "source": "${localWorkspaceFolder}",
+      "target": "/workspace"
+    }
+  ],
+  "shutdownAction": "stopContainer"
+}
