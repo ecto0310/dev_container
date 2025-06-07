@@ -1,12 +1,13 @@
-FROM archlinux:base-devel@sha256:3f7f6e4ddc04d4f6a8cb36b4af9e2290371f36dde1650c5177b50b7233706a35
+FROM ubuntu:24.04@sha256:b59d21599a2b151e23eea5f6602f4af4d7d31c4e236d22bf0b62b86d2e386b8f
 
-RUN useradd -G wheel builder \
-    && echo '%wheel ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
+WORKDIR /tmp
 
-USER builder
-WORKDIR /builder
+RUN apt-get update
 
-RUN sudo pacman -Syyu --noconfirm texlive texlive-lang perl-yaml-tiny perl-file-homedir
+RUN apt-get install -y texlive-full
 
-USER root
-WORKDIR /
+RUN rm -rf /tmp/* && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
+
+WORKDIR /workspace
